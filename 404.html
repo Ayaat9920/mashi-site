@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>ماشي</title>
+<!--
+  GitHub Pages answers every missing path on the site with this page, and only this one
+  (a 404.html inside a folder is never used). The web app (scripts/web-app.js) lives in
+  an unlisted folder, and its screens are paths inside it (/login, /request…), so a reload
+  on one of them lands here: send it back to the app's start, which opens the right screen
+  for the session. The folder's name is not written here — only its shape — so this
+  public page doesn't give the link away.
+-->
+<script>
+  (function () {
+    var match = location.pathname.match(/^\/mashi-site\/(app-[a-z0-9-]+)\//);
+    if (match) location.replace('/mashi-site/' + match[1] + '/');
+  })();
+</script>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: #7B3FF2; font-family: Tahoma, Arial, sans-serif; }
+  p { background: #fff; color: #1F1B2D; padding: 20px 24px; border-radius: 16px; margin: 16px; }
+</style>
+</head>
+<body>
+<p>الصفحة غير موجودة.</p>
+</body>
+</html>
