@@ -6,7 +6,7 @@
 <!-- The link carries the trip's code; nothing here should end up in a search index. -->
 <meta name="robots" content="noindex, nofollow" />
 <meta name="referrer" content="no-referrer" />
-<meta name="theme-color" content="#7B3FF2" />
+<meta name="theme-color" content="#58499D" />
 <title>متابعة رحلة — ماشي</title>
 <!-- What a messenger shows under the link. It reads the page without the code (that stays
      after the #), so it never sees the trip. -->
@@ -36,9 +36,9 @@
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
 <style>
   :root {
-    --primary: #7B3FF2;
+    --primary: #58499D;
     --primary-soft: #EFE7FE;
-    --accent: #F6C31C;
+    --accent: #F7C215;
     --text: #1F1B2D;
     --muted: #6B6675;
     --border: #D9D5E6;
@@ -546,7 +546,7 @@ function createMap() {
       id: 'trip-line', type: 'line', source: 'trip',
       layout: { 'line-cap': 'round', 'line-join': 'round' },
       // Dashed: a straight line between the two points, not the road taken.
-      paint: { 'line-color': '#7B3FF2', 'line-width': 4, 'line-opacity': 0.55, 'line-dasharray': [1.5, 1.5] },
+      paint: { 'line-color': '#58499D', 'line-width': 4, 'line-opacity': 0.55, 'line-dasharray': [1.5, 1.5] },
     });
     mapReady = true;
     if (lastAnswer && lastAnswer.pickup) renderMap(lastAnswer);
